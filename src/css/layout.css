@@ -77,6 +77,11 @@
     gap: var(--spacing-md);
     grid-template-columns: 1fr;
 }
+.about-grid {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+}
 
 .footer {
     background-color: var(--color-gray-dark);
@@ -91,6 +96,15 @@
     align-items: center;
     gap: var(--spacing-sm);
     text-align: center;
+}
+
+.footer__social {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);   
+    display: flex;
+    gap: var(--spacing-sm);
 }
 
 .footer a {
@@ -122,6 +136,9 @@
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
     
     .footer .container {
         flex-direction: row;
@@ -137,5 +154,8 @@
     
     .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 }
