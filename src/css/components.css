@@ -1,0 +1,67 @@
+.card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card__title {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.card__content {
+    color: var(--color-text);
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+.btn--secondary {
+    background-color: var(--color-secondary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+    background-color: var(--color-primary);
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.badge--primary {
+    background-color: var(--color-primary);
+}

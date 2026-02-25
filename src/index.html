@@ -12,27 +12,70 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header_logo">
-                <img src="assets/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
+            <div class="header__logo">
+                <img src="assets/pictures/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
             </div>
             <nav class="nav">
-                <ul class="nav_list">
+                <ul class="nav__list">
                     <li><a href="index.html" class="nav__link nav__link--active">Startseite</a></li>
-                    <li><a href="pages/schedule.html" class="nav__link">Spielplan</a></li>
-                    <li><a href="pages/roster.html" class="nav__link">Kader</a></li>
-                    <li><a href="pages/about.html" class="nav__link">Über uns</a></li>
+                    <li><a href="../pages/schedule.html" class="nav__link">Spielplan</a></li>
+                    <li><a href="../pages/roster.html" class="nav__link">Kader</a></li>
+                    <li><a href="../pages/about.html" class="nav__link">Über uns</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Eisbären Berlin</h1>
+                <p class="hero__subtitle">Deutscher Meister</p>
+            </div>
+        </section>
 
+        <section class="container section">
+            <div class="grid">
+                <div class="card">
+                    <h2 class="card__title">Nächstes Spiel</h2>
+                    <div id="next-game" class="card__content">
+                        <!-- Wird via JS geladen -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card__title">Tabelle</h2>
+                    <div id="standings" class="card__content">
+                        <!-- Wird via JS geladen -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card__title">News</h2>
+                    <div class="card__content">
+                        <p>Aktuelle Nachrichten folgen...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Eisbären Berlin Fanprojekt</p>
+            
+        </div>
+        <div class="container">
+            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="footer">
+                <img src="assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+           
+        </div>
+        <div class="container">
+            
+            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank">
+                <img src="assets/icons/insta.svg" alt="Instagram" width="32" height="32">
+            </a>
         </div>
     </footer>
 </body>
