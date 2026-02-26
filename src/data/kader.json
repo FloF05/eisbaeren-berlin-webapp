@@ -1,0 +1,338 @@
+{
+  "goalies": [
+    {
+      "number": 1,
+      "name": "Jonas Stettmer",
+      "position": "Torwart",
+      "nationality": "GER",
+      "birthdate": "2001-10-09",
+      "height": 196,
+      "weight": 100,
+      "catch": "L",
+      "image": "assets/players/stettmer.webp"
+    },
+    {
+      "number": 30,
+      "name": "Jake Hildebrand",
+      "position": "Torwart",
+      "nationality": "USA",
+      "birthdate": "1993-06-19",
+      "height": 183,
+      "weight": 88,
+      "catch": "L",
+      "image": "assets/players/hildebrand.webp"
+    },
+    {
+      "number": 35,
+      "name": "Anton Brandt",
+      "position": "Torwart",
+      "nationality": "GER",
+      "birthdate": "2007-04-19",
+      "height": 189,
+      "weight": 87,
+      "catch": "L",
+      "image": "assets/players/brandt.webp"
+    },
+    {
+      "number": 73,
+      "name": "Lennart Neiße",
+      "position": "Torwart",
+      "nationality": "GER",
+      "birthdate": "2006-09-14",
+      "height": 198,
+      "weight": 97,
+      "catch": "L",
+      "image": "assets/players/neiße.webp"
+    }
+  ],
+  "defenders": [
+    {
+      "number": 4,
+      "name": "Adam Smith",
+      "position": "Verteidiger",
+      "nationality": "CAN",
+      "birthdate": "1996-11-06",
+      "height": 188,
+      "weight": 90,
+      "shoots": "L",
+      "image": "assets/players/smith.webp"
+    },
+    {
+      "number": 5,
+      "name": "Mitch Reinke",
+      "position": "Verteidiger",
+      "nationality": "USA",
+      "birthdate": "1996-02-04",
+      "height": 182,
+      "weight": 82,
+      "shoots": "R",
+      "image": "assets/players/reinke.webp"
+    },
+    {
+      "number": 6,
+      "name": "Kai Wissmann",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "1996-10-22",
+      "height": 194,
+      "weight": 93,
+      "shoots": "R",
+      "image": "assets/players/wissmann.webp"
+    },
+    {
+      "number": 12,
+      "name": "Eric Mik",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "2000-02-28",
+      "height": 183,
+      "weight": 86,
+      "shoots": "L",
+      "image": "assets/players/mik.webp"
+    },
+    {
+      "number": 18,
+      "name": "Jonas Müller",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "1995-11-19",
+      "height": 185,
+      "weight": 90,
+      "shoots": "L",
+      "image": "assets/players/mueller.webp"
+    },
+    {
+      "number": 40,
+      "name": "Korbinian Geibel",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "2002-07-08",
+      "height": 184,
+      "weight": 93,
+      "shoots": "L",
+      "image": "assets/players/geibel.webp"
+    },
+    {
+      "number": 56,
+      "name": "Markus Niemeläinen",
+      "position": "Verteidiger",
+      "nationality": "FIN",
+      "birthdate": "1998-06-08",
+      "height": 197,
+      "weight": 89,
+      "shoots": "L",
+      "image": "assets/players/niemelaeinen.webp"
+    },
+    {
+      "number": 74,
+      "name": "Les Lancester",
+      "position": "Verteidiger",
+      "nationality": "USA",
+      "birthdate": "1995-02-06",
+      "height": 180,
+      "weight": 84,
+      "shoots": "R",
+      "image": "assets/players/lancester.webp"
+    },
+    {
+      "number": 75,
+      "name": "Norwin Panocha",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "2005-02-24",
+      "height": 187,
+      "weight": 90,
+      "shoots": "L",
+      "image": "assets/players/panocha.webp"
+    },
+    {
+      "number": 83,
+      "name": "Moritz Kretzschmar",
+      "position": "Verteidiger",
+      "nationality": "GER",
+      "birthdate": "2006-07-19",
+      "height": 186,
+      "weight": 91,
+      "shoots": "L",
+      "image": "assets/players/kretzschmar.webp"
+    }
+  ],
+  "forwards": [
+    {
+      "number": 9,
+      "name": "Ty Ronning",
+      "position": "Angreifer",
+      "nationality": "USA",
+      "birthdate": "1997-10-20",
+      "height": 178,
+      "weight": 82,
+      "shoots": "R",
+      "image": "assets/players/ronnig.webp"
+    },
+    {
+      "number": 10,
+      "name": "Lean Bergmann",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1998-10-04",
+      "height": 187,
+      "weight": 94,
+      "shoots": "R",
+      "image": "assets/players/bergmann.webp"
+    },
+    {
+      "number": 13,
+      "name": "Patrick Khodorenko",
+      "position": "Angreifer",
+      "nationality": "USA",
+      "birthdate": "1998-10-13",
+      "height": 183,
+      "weight": 91,
+      "shoots": "L",
+      "image": "assets/players/khodorenko.webp"
+    },
+    {
+      "number": 17,
+      "name": "Jean-Sébastien Dea",
+      "position": "Angreifer",
+      "nationality": "CAN",
+      "birthdate": "1994-02-08",
+      "height": 180,
+      "weight": 79,
+      "shoots": "R",
+      "image": "assets/players/dea.webp"
+    },
+    {
+      "number": 21,
+      "name": "Manuel Wiederer",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1996-11-21",
+      "height": 185,
+      "weight": 80,
+      "shoots": "R",
+      "image": "assets/players/wiederer.webp"
+    },
+    {
+      "number": 23,
+      "name": "Blaine Byron",
+      "position": "Angreifer",
+      "nationality": "CAN",
+      "birthdate": "1995-02-21",
+      "height": 185,
+      "weight": 82,
+      "shoots": "L",
+      "image": "assets/players/byron.webp"
+    },
+    {
+      "number": 33,
+      "name": "Matěj Leden",
+      "position": "Angreifer",
+      "nationality": "CZ/GER",
+      "birthdate": "2004-07-03",
+      "height": 182,
+      "weight": 87,
+      "shoots": "L",
+      "image": "assets/players/leden.webp"
+    },
+    {
+      "number": 37,
+      "name": "Markus Vikingstad",
+      "position": "Angreifer",
+      "nationality": "NOR",
+      "birthdate": "1999-10-27",
+      "height": 193,
+      "weight": 95,
+      "shoots": "L",
+      "image": "assets/players/vikingstad.webp"
+    },
+    {
+      "number": 38,
+      "name": "Yannick Veilleux",
+      "position": "Angreifer",
+      "nationality": "CAN",
+      "birthdate": "1993-02-22",
+      "height": 189,
+      "weight": 92,
+      "shoots": "L",
+      "image": "assets/players/veilleux.webp"
+    },
+    {
+      "number": 43,
+      "name": "Andreas Eder",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1996-03-20",
+      "height": 189,
+      "weight": 92,
+      "shoots": "R",
+      "image": "assets/players/eder.webp"
+    },
+    {
+      "number": 52,
+      "name": "Lennard Nieleck",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "2004-03-10",
+      "height": 194,
+      "weight": 96,
+      "shoots": "R",
+      "image": "assets/players/nieleck.webp"
+    },
+    {
+      "number": 77,
+      "name": "Eric Hördler",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "2004-08-10",
+      "height": 190,
+      "weight": 88,
+      "shoots": "L",
+      "image": "assets/players/hoerdler.webp"
+    },
+    {
+      "number": 92,
+      "name": "Marcel Noebels",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1992-03-14",
+      "height": 191,
+      "weight": 95,
+      "shoots": "L",
+      "image": "assets/players/noebels.webp"
+    },
+    {
+      "number": 93,
+      "name": "Leonhard Pföderl",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1993-09-01",
+      "height": 184,
+      "weight": 90,
+      "shoots": "R",
+      "image": "assets/players/pfoederl.webp"
+    },
+    {
+      "number": 94,
+      "name": "Liam Kirk",
+      "position": "Angreifer",
+      "nationality": "GBR",
+      "birthdate": "2000-01-03",
+      "height": 184,
+      "weight": 85,
+      "shoots": "L",
+      "image": "assets/players/kirk.webp"
+    },
+    {
+      "number": 95,
+      "name": "Frederik Tiffels",
+      "position": "Angreifer",
+      "nationality": "GER",
+      "birthdate": "1995-05-20",
+      "height": 184,
+      "weight": 93,
+      "shoots": "L",
+      "image": "assets/players/tiffels.webp"
+    }
+  ]
+}
