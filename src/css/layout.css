@@ -5,6 +5,9 @@
     padding: 0 var(--spacing-sm);
 }
 
+/* ===================================
+   Header & Navigation
+   =================================== */
 .header {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -44,8 +47,18 @@
 .nav__link:focus,
 .nav__link--active {
     background-color: var(--color-secondary);
+    outline: 2px solid var(--color-white);
+    outline-offset: -2px;
 }
 
+.nav__link--active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===================================
+   Main Content & Hero Section
+   =================================== */
 .main {
     min-height: calc(100vh - 200px);
 }
@@ -77,12 +90,10 @@
     gap: var(--spacing-md);
     grid-template-columns: 1fr;
 }
-.about-grid {
-    display: grid;
-    gap: var(--spacing-md);
-    grid-template-columns: 1fr;
-}
 
+/* ===================================
+   Footer
+   =================================== */
 .footer {
     background-color: var(--color-gray-dark);
     color: var(--color-white);
@@ -107,6 +118,15 @@
     gap: var(--spacing-sm);
 }
 
+.footer__social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--spacing-xs);
+}
+
 .footer a {
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -115,8 +135,15 @@
 .footer a:hover,
 .footer a:focus {
     opacity: 1;
+    outline: 2px solid var(--color-white);
+    outline-offset: 2px;
 }
 
+/* ===================================
+   Media Queries - Responsive Design
+   =================================== */
+
+/* Tablet und größer */
 @media (min-width: 768px) {
     .header .container {
         flex-direction: row;
@@ -136,9 +163,6 @@
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
     
     .footer .container {
         flex-direction: row;
@@ -147,6 +171,7 @@
     }
 }
 
+/* Desktop und größer */
 @media (min-width: 1024px) {
     .hero__title {
         font-size: 3.5rem;

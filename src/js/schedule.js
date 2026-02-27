@@ -1,9 +1,17 @@
+/**
+ * schedule.js - Spielplan-Seite Funktionalität
+ * Zeigt alle Spiele der Eisbären Berlin mit Filter-Möglichkeit
+ */
+
 'use strict';
 
+// Globale Variablen für Spielliste und aktuellen Filter
 let allGames = [];
 let currentFilter = 'all';
 
-async function loadSchedule() {
+/**
+ * Lädt alle Spiele der Eisbären Berlin für die Saison
+ */async function loadSchedule() {
     try {
         const response = await fetch('https://api.openligadb.de/getmatchdata/del/2025/Eisbären Berlin');
         const data = await response.json();
@@ -19,6 +27,10 @@ async function loadSchedule() {
     }
 }
 
+/**
+ * Zeigt die Spiele im DOM an
+ * @param {Array} games - Array mit Spiel-Objekten
+ */
 function displayGames(games) {
     const container = document.getElementById('schedule-container');
     container.innerHTML = '';
@@ -30,7 +42,7 @@ function displayGames(games) {
     
     for (let game of games) {
         const isHome = game.team1.teamName === 'Eisbären Berlin';
-        const gameCard = document.createElement('div');
+        const gameCard = document.createElement('article');
         gameCard.className = 'game-card';
         
         const gameDate = new Date(game.matchDateTime);
@@ -79,6 +91,9 @@ function displayGames(games) {
 
 }
 
+/**
+ * Richtet die Filter-Buttons ein (Alle/Heim/Auswärts)
+ */
 function setupFilters() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     

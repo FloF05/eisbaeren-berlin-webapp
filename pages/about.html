@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns - Eisbären Berlin</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/css/layout.css">
     <link rel="stylesheet" href="../src/css/components.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <header class="header">
         <div class="container">
             <div class="header__logo">
                 <img src="../src/assets/pictures/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Hauptnavigation">
                 <ul class="nav__list">
                     <li><a href="../src/index.html" class="nav__link">Startseite</a></li>
                     <li><a href="schedule.html" class="nav__link">Spielplan</a></li>
                     <li><a href="roster.html" class="nav__link">Kader</a></li>
-                    <li><a href="about.html" class="nav__link nav__link--active">Über uns</a></li>
+                    <li><a href="about.html" class="nav__link nav__link--active" aria-current="page">Über uns</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-     <main class="main">
+     <main class="main" id="main-content">
         <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Über dieses Projekt</h1>
-                <p class="hero__subtitle">Eisbären Berlin Fan-Webapp</p>
-            </div>
+            <h1 class="hero__title">Über dieses Projekt</h1>
+            <p class="hero__subtitle">Eisbären Berlin Fan-Webapp</p>
         </section>
 
-        <section class="container section">
-            <div class="about-grid">
-                <div class="card">
+        <div class="container section">
+            <div class="grid">
+                <article class="card">
                     <h2 class="card__title">Projektbeschreibung</h2>
                     <div class="card__content">
                         <p>Diese Webseite wurde im Rahmen des Webdesign-Kurses entwickelt und zeigt die Eisbären Berlin - den erfolgreichsten Club der Deutschen Eishockey Liga (DEL).</p>
@@ -47,9 +49,9 @@
                             <li>📱 Mobile-First Design</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             
-                <div class="card">
+                <article class="card">
                     <h2 class="card__title">Verwendete Technologien</h2>
                     <div class="card__content">
                         <ul>
@@ -60,9 +62,9 @@
                             <li><strong>TheSportsDB API</strong> - Kader-Daten (optional)</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <h2 class="card__title">Über die Eisbären Berlin</h2>
                     <div class="card__content">
                         <p>Die Eisbären Berlin sind ein deutscher Eishockeyclub aus Berlin und spielen in der Deutschen Eishockey Liga (DEL).</p>
@@ -73,9 +75,9 @@
                             <li>🏟️ Heimstadion: Uber Arena(14.200 Plätze)</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -84,11 +86,11 @@
             
         </div>
         <div class="footer__social">
-            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="footer">
-                <img src="../src/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank" aria-label="GitHub Repository besuchen">
+                <img src="../src/assets/icons/github.svg" alt="" width="32" height="32">
             </a>
-           <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank">
-                <img src="../src/assets/icons/insta.svg" alt="Instagram" width="32" height="32">
+           <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank" aria-label="Instagram Profil besuchen">
+                <img src="../src/assets/icons/insta.svg" alt="" width="32" height="32">
             </a>
         </div>
         

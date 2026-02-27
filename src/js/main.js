@@ -1,12 +1,20 @@
-'use strict';
-const API_BASE_URL = 'https://api.openligadb.de';
-const LEAGUE_ID = 4849;
-const TEAM_ID = 641; // Eisbären Berlin
-const LEAGUE_SHORT = 'del';
-const SEASON = '2025'; 
-const proxy = 'https://api.allorigins.win/raw';
+/**
+ * main.js - Hauptseite Funktionalität
+ * Lädt das nächste Spiel und die aktuelle Tabelle von der OpenLigaDB API
+ */
 
-async function loadNextGame() {
+'use strict';
+
+// API-Konfiguration
+const API_BASE_URL = 'https://api.openligadb.de';
+const LEAGUE_ID = 4849; // DEL Liga-ID
+const TEAM_ID = 641; // Eisbären Berlin Team-ID
+const LEAGUE_SHORT = 'del';
+const SEASON = '2025';
+
+/**
+ * Lädt das nächste anstehende Spiel der Eisbären Berlin
+ */async function loadNextGame() {
     try {
         const response = await fetch(`${API_BASE_URL}/getnextmatchbyleagueteam/${LEAGUE_ID}/${TEAM_ID}`);
         
@@ -29,6 +37,10 @@ async function loadNextGame() {
     }
 }
 
+/**
+ * Zeigt die Spiel-Details formatiert an
+ * @param {Object} game - Spiel-Objekt von der API
+ */
 function displayNextGame(game) {
     const date = new Date(game.matchDateTime);
     const formattedDate = date.toLocaleDateString('de-DE', {
@@ -63,6 +75,9 @@ function displayNextGame(game) {
     `;
 }
 
+/**
+ * Lädt die aktuelle DEL Tabelle
+ */
 async function loadTable() {
     try {
         const response = await fetch(`${API_BASE_URL}/getbltable/${LEAGUE_SHORT}/${SEASON}`);
@@ -86,6 +101,10 @@ async function loadTable() {
     }
 }
 
+/**
+ * Zeigt die Tabelle formatiert an
+ * @param {Array} table - Array mit Team-Objekten
+ */
 function displayTable(table) {
     let tableRows = '';
     
@@ -113,6 +132,7 @@ function displayTable(table) {
     
     const tableHTML = `
         <table class="standings-table">
+            <caption class="visually-hidden">DEL Tabelle Saison 2025/26</caption>
             <thead>
                 <tr>
                     <th>Pos</th>
@@ -134,8 +154,9 @@ function displayTable(table) {
     document.getElementById('standings').innerHTML = tableHTML;
 }
 
-
-
+/**
+ * Initialisierung - wird beim Laden der Seite ausgeführt
+ */
 function main() {
     loadNextGame();
     loadTable();

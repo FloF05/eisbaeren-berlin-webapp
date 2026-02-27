@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spielplan - Eisbären Berlin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/css/layout.css">
     <link rel="stylesheet" href="../src/css/components.css">
     <link rel="stylesheet" href="../src/css/style.css">
     <script src="../src/js/schedule.js" defer></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <header class="header">
         <div class="container">
             <div class="header__logo">
                 <img src="../src/assets/pictures/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Hauptnavigation">
                 <ul class="nav__list">
                     <li><a href="../src/index.html" class="nav__link">Startseite</a></li>
-                    <li><a href="schedule.html" class="nav__link nav__link--active">Spielplan</a></li>
+                    <li><a href="schedule.html" class="nav__link nav__link--active" aria-current="page">Spielplan</a></li>
                     <li><a href="roster.html" class="nav__link">Kader</a></li>
                     <li><a href="about.html" class="nav__link">Über uns</a></li>
                 </ul>
@@ -26,7 +30,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main-content">
         <section class="container section">
             <h1>Spielplan 2025/26</h1>
             
@@ -47,11 +51,11 @@
             <p>&copy; 2026 Eisbären Berlin Fanprojekt</p>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank">
-                <img src="../src/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank" aria-label="GitHub Repository besuchen">
+                <img src="../src/assets/icons/github.svg" alt="" width="32" height="32">
             </a>
-            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank">
-                <img src="../src/assets/icons/insta.svg" alt="Instagram" width="32" height="32">
+            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank" aria-label="Instagram Profil besuchen">
+                <img src="../src/assets/icons/insta.svg" alt="" width="32" height="32">
             </a>
         </div>
     </footer>

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eisbären Berlin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,14 +14,18 @@
     <script async src="//www.instagram.com/embed.js"></script>
 </head>
 <body>
+    <!-- Skip-Link für Barrierefreiheit -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <!-- Header mit Logo und Navigation -->
     <header class="header">
         <div class="container">
             <div class="header__logo">
                 <img src="assets/pictures/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Hauptnavigation">
                 <ul class="nav__list">
-                    <li><a href="index.html" class="nav__link nav__link--active">Startseite</a></li>
+                    <li><a href="index.html" class="nav__link nav__link--active" aria-current="page">Startseite</a></li>
                     <li><a href="../pages/schedule.html" class="nav__link">Spielplan</a></li>
                     <li><a href="../pages/roster.html" class="nav__link">Kader</a></li>
                     <li><a href="../pages/about.html" class="nav__link">Über uns</a></li>
@@ -27,52 +34,58 @@
         </div>
     </header>
 
-    <main class="main">
+    <!-- Hauptinhalt -->
+    <main class="main" id="main-content">
+        <!-- Hero Section mit Titel -->
         <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Eisbären Berlin</h1>
-                <p class="hero__subtitle">Deutscher Meister</p>
-            </div>
+            <h1 class="hero__title">Eisbären Berlin</h1>
+            <p class="hero__subtitle">Deutscher Meister</p>
         </section>
 
-        <section class="container section">
+        <!-- Content-Bereich mit Cards -->
+        <div class="container section">
+            <h2 class="visually-hidden">Übersicht</h2>
             <div class="grid">
-                <div class="card">
+                <!-- Nächstes Spiel -->
+                <article class="card">
                     <h2 class="card__title">Nächstes Spiel</h2>
                     <div id="next-game" class="card__content">
                         
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <!-- Aktuelle Tabelle -->
+                <article class="card">
                     <h2 class="card__title">Tabelle</h2>
                     <div id="standings" class="card__content">
                         
                     </div>
-                </div>
+                </article>
 
-                <div class="card">
+                <!-- News / Instagram Feed -->
+                <article class="card">
                     <h2 class="card__title">News</h2>
                     <div id="news" class="card__content">
                         <!-- Instagram Embed -->
                         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/eisbaerenberlin/" data-instgrm-version="14"></blockquote>
                     </div>
                     <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank" class="card__link">Mehr auf Instagram →</a>
-                </div>
+                </article>
             </div>
-        </section>
+        </div>
     </main>
 
+    <!-- Footer mit Copyright und Social Media Links -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Eisbären Berlin Fanprojekt</p>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank">
-                <img src="assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank" aria-label="GitHub Repository besuchen">
+                <img src="assets/icons/github.svg" alt="" width="32" height="32">
             </a>
-            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank">
-                <img src="assets/icons/insta.svg" alt="Instagram" width="32" height="32">
+            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank" aria-label="Instagram Profil besuchen">
+                <img src="assets/icons/insta.svg" alt="" width="32" height="32">
             </a>
         </div>
     </footer>

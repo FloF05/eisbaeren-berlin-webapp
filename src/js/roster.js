@@ -1,6 +1,13 @@
+/**
+ * roster.js - Kader-Seite Funktionalität
+ * Lädt und zeigt die Spieler-Daten aus der lokalen JSON-Datei
+ */
+
 'use strict';
 
-async function loadRoster() {
+/**
+ * Lädt die Kader-Daten aus der JSON-Datei
+ */async function loadRoster() {
     try {
         const response = await fetch('../src/data/kader.json');
         const data = await response.json();
@@ -13,11 +20,17 @@ async function loadRoster() {
     }
 }
 
+/**
+ * Zeigt die Spieler in Karten-Format an
+ * @param {string} containerId - ID des Container-Elements
+ * @param {Array} players - Array mit Spieler-Objekten
+ * @param {boolean} isGoalie - Ob es sich um Torhüter handelt
+ */
 function displayPlayers(containerId, players, isGoalie = false) {
     const container = document.getElementById(containerId);
     
     for (let player of players) {
-        const playerCard = document.createElement('div');
+        const playerCard = document.createElement('article');
         playerCard.className = 'player-card';
         
         const handLabel = isGoalie ? 'Fanghand' : 'Schusshand';
@@ -39,4 +52,5 @@ function displayPlayers(containerId, players, isGoalie = false) {
     }
 }
 
+// Initialisierung beim Laden der Seite
 loadRoster();
