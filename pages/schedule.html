@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spielplan - Eisbären Berlin</title>
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/components.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="../src/js/schedule.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="../src/assets/pictures/eisbaren-berlin-logo.png" alt="Logo Eisbären Berlin">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../src/index.html" class="nav__link">Startseite</a></li>
+                    <li><a href="schedule.html" class="nav__link nav__link--active">Spielplan</a></li>
+                    <li><a href="roster.html" class="nav__link">Kader</a></li>
+                    <li><a href="about.html" class="nav__link">Über uns</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="container section">
+            <h1>Spielplan 2025/26</h1>
+            
+            <div class="schedule-filter">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="home">Heimspiele</button>
+                <button class="filter-btn" data-filter="away">Auswärtsspiele</button>
+            </div>
+
+            <div id="schedule-container" class="schedule-list">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Eisbären Berlin Fanprojekt</p>
+        </div>
+        <div class="footer__social">
+            <a href="https://github.com/FloF05/eisbaeren-berlin-webapp" target="_blank">
+                <img src="../src/assets/icons/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com/eisbaerenberlin/" target="_blank">
+                <img src="../src/assets/icons/insta.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

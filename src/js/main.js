@@ -4,6 +4,7 @@ const LEAGUE_ID = 4849;
 const TEAM_ID = 641; // Eisbären Berlin
 const LEAGUE_SHORT = 'del';
 const SEASON = '2025'; 
+const proxy = 'https://api.allorigins.win/raw';
 
 async function loadNextGame() {
     try {
